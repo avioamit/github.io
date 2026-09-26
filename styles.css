@@ -234,7 +234,7 @@ p {
   min-height: 700px;
   display: flex;
   align-items: center;
-  background-image: url("\avioamit\jaitahlmata\1.jpg");
+  background-image: url("/avioamit/jaitahlmata/1.jpg");
   background-size: cover;
   background-position: center;
 }

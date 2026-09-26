@@ -234,7 +234,7 @@ p {
   min-height: 700px;
   display: flex;
   align-items: center;
-  background-image: url("C:\\Users\\avioa\\Documents\\temple-website\\images\\1.jpg");
+  background-image: url("C:\\Users\\avioa\\Documents\\temple-website\\1.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -905,7 +905,7 @@ p {
   border-radius: 16px;
   background-image:
     linear-gradient(rgba(46, 12, 12, 0.32), rgba(255,255,255,0.08)),
-    url("images/2.jpeg");
+    url("2.jpeg");
   background-size: cover;
   background-position: center;
   display: grid;

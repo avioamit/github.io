@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Temple Events</title>
+    <meta name="description" content="Admin dashboard for editing temple event details." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Shree Tahl Mata Temple home">
+          <span class="brand-mark">ॐ</span>
+          <div>
+            <strong>Shree Tahl Mata</strong>
+            <small>Temple</small>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html#about">About</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#events">Events</a>
+          <a href="index.html#visit">Visit</a>
+          <a href="index.html#donate">Donate</a>
+        </nav>
+
+        <a class="btn btn-primary" href="index.html">Back to Site</a>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="registration-hero">
+        <div class="container registration-banner">
+          <p class="section-tag">Admin Access</p>
+          <h1>Manage temple events.</h1>
+          <p>Sign in to update event details and keep the temple calendar current.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container admin-layout">
+          <div id="login-panel" class="admin-panel">
+            <h2>Login</h2>
+            <form id="admin-login-form" class="registration-form">
+              <label class="field">
+                <span>Username</span>
+                <input type="text" id="admin-username" name="username" placeholder="admin" required />
+              </label>
+
+              <label class="field">
+                <span>Password</span>
+                <input type="password" id="admin-password" name="password" placeholder="Enter password" required />
+              </label>
+
+              <button type="submit" class="btn btn-primary btn-wide">Sign In</button>
+              <p id="admin-login-message" class="form-success" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div id="admin-panel" class="admin-panel hidden">
+            <div class="admin-header-row">
+              <h2>Event Editor</h2>
+              <button type="button" id="logout-btn" class="btn btn-secondary">Log Out</button>
+            </div>
+
+            <form id="add-event-form" class="add-event-form">
+              <div class="form-grid">
+                <label class="field">
+                  <span>Event Title</span>
+                  <input type="text" name="title" placeholder="Enter event title" required />
+                </label>
+
+                <label class="field">
+                  <span>Event Date</span>
+                  <input type="date" id="event-date" name="date" required />
+                </label>
+
+                <label class="field full-width">
+                  <span>Short Description</span>
+                  <textarea name="description" rows="3" placeholder="Short description for the homepage" required></textarea>
+                </label>
+
+                <label class="field full-width">
+                  <span>Details</span>
+                  <textarea name="details" rows="4" placeholder="Detailed event information"></textarea>
+                </label>
+
+                <label class="field full-width">
+                  <span>Latest Event Picture</span>
+                  <div class="upload-box">
+                    <input id="event-image-upload" type="file" accept="image/*" />
+                    <div id="event-image-preview" class="image-upload-preview empty">No image selected</div>
+                  </div>
+                </label>
+              </div>
+
+              <div class="calendar-panel">
+                <div class="calendar-header">
+                  <button type="button" id="prev-month" class="calendar-nav" aria-label="Previous month">&#8249;</button>
+                  <h3 id="calendar-month-label">Month Year</h3>
+                  <button type="button" id="next-month" class="calendar-nav" aria-label="Next month">&#8250;</button>
+                </div>
+                <div class="calendar-weekdays">
+                  <span>Mon</span>
+                  <span>Tue</span>
+                  <span>Wed</span>
+                  <span>Thu</span>
+                  <span>Fri</span>
+                  <span>Sat</span>
+                  <span>Sun</span>
+                </div>
+                <div id="calendar-grid" class="calendar-grid"></div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-wide">Add Event</button>
+              <p id="add-event-message" class="form-success" aria-live="polite"></p>
+            </form>
+
+            <div id="admin-event-list" class="admin-event-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Shree Tahl Mata Temple. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAI MA TAHL</title>
+    <meta
+      name="description"
+      content="A serene temple website with spiritual guidance, upcoming events, puja schedules, and community programs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Shree Tahl Mata Temple home">
+          <span class="brand-mark">ॐ</span>
+          <div>
+            <strong>Shree Tahl Mata</strong>
+            <small>Temple</small>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#events">Events</a>
+          <a href="#visit">Visit</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+
+        <a class="btn btn-primary" href="#visit">Plan Your Visit</a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow" align="center">Divine peace • Community • Tradition</p>
+            <h1>Come, celebrate faith, gratitude, and togetherness.</h1>
+            <p class="lead">
+              Welcome to a sacred place of worship, reflection, and service. Join us in daily rituals,
+              festive celebrations, and community outreach rooted in compassion and devotion.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="register.html">Join an Event</a>
+              <a class="btn btn-secondary" href="#about">Learn More</a>
+            </div>
+            <ul class="quick-stats" aria-label="Temple highlights">
+              <li><strong>7am–8pm</strong><span>Daily temple hours</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="about">
+        <div class="container two-col">
+          <div>
+            <p class="section-tag">Our Temple</p>
+            <h2>Rooted in devotion, guided by compassion.</h2>
+            <p>
+              Shree Tahl Mata Temple is a welcoming spiritual sanctuary for families and individuals seeking
+              peace, purpose, and connection. Through prayer, cultural programs, education, and seva,
+              we nurture a vibrant community that honors timeless traditions and values.
+            </p>
+            <p>
+              From daily aarti to special festivals, every gathering is designed to inspire reflection,
+              gratitude, and service to all beings.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>Daily Schedule</h3>
+            <ul>
+              <li><span>Morning Aarti</span><strong>6:00 AM</strong></li>
+              <li><span>Temple Opens</span><strong>7:00 AM</strong></li>
+              <li><span>Evening Aarti</span><strong>7:00 PM</strong></li>
+              <li><span>Prasad Distribution</span><strong>After each Puja</strong></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">What We Offer</p>
+            <h2>Spiritual services for every stage of life</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="service-card">
+              <div class="icon">🕉️</div>
+              <h3>Puja & Prayers</h3>
+              <p>Daily rituals, special poojas, and personalized blessings for health, peace, and prosperity.</p>
+            </article>
+            <article class="service-card">
+              <div class="icon">🎶</div>
+              <h3>Bhajan & Kirtan</h3>
+              <p>Spiritual music sessions that uplift the soul and bring the community together in devotion.</p>
+            </article>
+            <article class="service-card">
+              <div class="icon">👨‍👩‍👧‍👦</div>
+              <h3>Family Programs</h3>
+              <p>Children’s spirituality classes, family events, and cultural learning experiences.</p>
+            </article>
+            <article class="service-card">
+              <div class="icon">🤝</div>
+              <h3>Seva & Outreach</h3>
+              <p>Service initiatives, charitable drives, and support programs for the wider community.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section events" id="events">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">Upcoming Celebrations</p>
+            <h2>Join our festivals and community gatherings</h2>
+          </div>
+
+          <div id="events-list" class="event-grid"></div>
+        </div>
+      </section>
+
+      <section class="section visit" id="visit">
+        <div class="container visit-grid">
+          <div>
+            <p class="section-tag">Visit Us</p>
+            <h2>Experience serenity in the heart of the community.</h2>
+            <p>
+              Whether you are seeking spiritual guidance, family connection, or simply a peaceful moment,
+              you are welcome here. We invite visitors of all walks of life to experience the temple's warmth.
+            </p>
+
+            <ul class="visit-list">
+              <li>
+                <strong>Address:</strong>
+                <a href="https://www.google.com/maps/place/Tal+Mata+Temple/@32.2587215,76.2057585,185m/data=!3m1!1e3!4m6!3m5!1s0x391b591725ce0f85:0xf5b7efc68d4d1c73!8m2!3d32.2587351!4d76.2064264!16s%2Fg%2F11b6ryzvz6!5m1!1e4?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">
+                  Tal Mata Temple
+                </a>
+              </li>
+              <li><strong>Phone:</strong> 6230482177</li>
+              <li><strong>Email:</strong> avioamit@gmail.com</li>
+            </ul>
+          </div>
+
+          <div class="map-card" aria-label="Temple map location">
+            <a
+              class="map-link"
+              href="https://www.google.com/maps/place/Tal+Mata+Temple/@32.2587215,76.2057585,185m/data=!3m1!1e3!4m6!3m5!1s0x391b591725ce0f85:0xf5b7efc68d4d1c73!8m2!3d32.2587351!4d76.2064264!16s%2Fg%2F11b6ryzvz6!5m1!1e4?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Tal Mata Temple in Google Maps"
+            >
+              <div class="map-placeholder">
+                <span>Temple Location</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Shree Tahl Mata Temple. All rights reserved.</p>
+        <div class="socials" aria-label="Social media">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
